@@ -12,10 +12,12 @@ namespace Overview
         private int[] array;
         private SortAlgorithm sorter;
         private long sortTime;
+        private int size;
 
-        public AlgorithmManager(int choice)
+        public AlgorithmManager(int choice, int size)
         {
-            array = new int[10000];
+            this.size = size;
+            array = new int[size];
             FillArray();
             switch (choice)
             {
@@ -57,7 +59,7 @@ namespace Overview
 
         public void Report()
         {
-            Console.WriteLine($"Sorting completed in {sortTime} ms.");
+            Console.WriteLine($"Sorting completed in {sortTime} ms for size of {size} numbers.");
         }
     }
 }
