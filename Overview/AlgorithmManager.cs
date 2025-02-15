@@ -17,16 +17,27 @@ namespace Overview
         {
             array = new int[10000];
             FillArray();
-            sorter = choice switch
+            switch (choice)
             {
-                1 => new BubbleSort(),
-                2 => new SelectionSort(),
-                3 => new InsertionSort(),
-                4 => new MergeSort(),
-                5 => new QuickSort(),
-                6 => new HeapSort(),
-                _ => throw new ArgumentException("Invalid choice. Choose between 1 and 6.")
-            };
+                case 1: 
+                    sorter = new BubbleSort();
+                    break;
+                case 2: 
+                    sorter = new SelectionSort();
+                    break;
+                case 3: 
+                    sorter = new InsertionSort();
+                    break;
+                case 4: 
+                    sorter = new MergeSort();
+                    break;
+                case 5: 
+                    sorter = new QuickSort();
+                    break;
+                case 6: 
+                    sorter = new HeapSort(); 
+                    break;
+            }
         }
 
         private void FillArray()

@@ -19,7 +19,7 @@
                 Console.WriteLine("6. Heap Sort");
                 Console.Write("Your choice: ");
                 isNumber = int.TryParse(Console.ReadLine(), out choice);
-            } while (!isNumber);
+            } while (!isNumber && !(1 <= choice && choice <= 6));
 
             AlgorithmManager manager = new AlgorithmManager(choice);
 
