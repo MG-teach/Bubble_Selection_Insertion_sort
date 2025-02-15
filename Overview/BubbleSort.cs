@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Overview
 {
-    internal class BubbleSort : SortAlgorithm
+    public class BubbleSort : SortAlgorithm
     {
         public override void Sort(int[] array)
         {
