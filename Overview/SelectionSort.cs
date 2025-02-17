@@ -18,6 +18,11 @@ namespace Overview
                     if (array[j] < array[minIndex])
                         minIndex = j;
                 (array[i], array[minIndex]) = (array[minIndex], array[i]);
+
+                //int temp = array[minIndex];
+                //array[minIndex] = array[i];
+                //array[i] = temp;
+
             }
         }
     }
