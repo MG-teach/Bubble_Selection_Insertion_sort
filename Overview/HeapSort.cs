@@ -34,5 +34,28 @@ namespace Overview
                 Heapify(array, n, largest);
             }
         }
+
+        //private void Heapify1(int[] array, int n, int i)
+        //{
+        //    while (true)
+        //    {
+        //        int largest = i;
+        //        int left = 2 * i + 1;
+        //        int right = 2 * i + 2;
+
+        //        if (left < n && array[left] > array[largest])
+        //            largest = left;
+
+        //        if (right < n && array[right] > array[largest])
+        //            largest = right;
+
+        //        if (largest == i)
+        //            break;
+
+        //        (array[i], array[largest]) = (array[largest], array[i]);
+        //        i = largest; // Преместваме i към новата позиция и продължаваме
+        //    }
+        //}
+
     }
 }
